@@ -1,0 +1,243 @@
+/* Estilos globales */
+body {
+    font-family: 'EB Garamond';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+    background-color: #A73624;
+
+}
+
+body {
+    font-family: 'EB Garamond';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+    background-color: #cc9677;
+}
+
+/* Estilos globales del header */
+header {
+    background-color: #222;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos del nav */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+nav .logo h1 {
+    font-family: 'Abril Fatface';
+
+    color: #fff;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    color: white; /* Color de texto */
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2em;
+    transition: color 0.6s ease; /* Transición para el color */
+}
+
+nav ul li a:hover {
+    color: #ff6347; /* Color al pasar el mouse */
+}
+
+
+.hero {
+    background-image: url('../imagenes/inicio.jpg');
+    background-size: cover; /* Asegura que la imagen cubra todo el área */
+    background-position: center; /* Centra la imagen */
+    color: white; /* Asegura que el texto sea visible */
+    padding: 50px 0;
+    position: relative; /* Necesario para el posicionamiento del contenido */
+}
+
+.hero::before {
+    content: "";
+    position: absolute; /* Asegura que cubra toda la sección */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Color negro con 50% de transparencia */
+    z-index: 0; /* Coloca el pseudo-elemento detrás del contenido */
+}
+
+.hero-content {
+    position: relative; /* Hace que el contenido esté en la parte superior */
+    text-align: center; /* Centra el texto */
+    z-index: 1; /* Asegura que el contenido esté por encima de la imagen */
+}
+
+.hero-content h2 {
+    font-size: 2.5em;
+    font-family: 'Pacifico';
+    letter-spacing: 2px;
+}
+
+.hero-content p {
+    font-size: 1.5em;
+}
+
+.btn {
+    background-color: #ff6347;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+    transition: 0.6s ease;
+}
+
+.btn:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 145, 71);
+    border: 2px solid rgb(255, 145, 71); /* Cambiar el borde al pasar el mouse */
+}
+
+.hero-image img {
+    max-width: 600px;
+    height: auto;
+}
+
+.intro {
+    text-align: center;
+    padding: 50px;
+    background-color: #b3412f;
+}
+
+.intro h2 {
+    font-size: 2em;
+    color: white;
+    font-family: 'Pacifico';
+    letter-spacing: 2px;
+}
+
+.intro p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.productos {
+    text-align: center;
+    padding: 50px;
+    background-color: #ffeae3;
+}
+
+.productos h2 {
+    color: #4e271a;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-family: 'Pacifico';
+    letter-spacing: 2px;
+}
+
+.producto-lista {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.producto-item {
+    width: 30%;
+}
+
+.producto-item img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.producto-item h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: #4e271a;
+}
+
+.contacto {
+    background-color: #f4f4f4;
+    padding: 50px;
+    text-align: center;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    margin: 20px auto; /* Margen superior e inferior */
+    max-width: 800px; /* Ancho máximo */
+}
+
+.contacto h2 {
+    font-family: 'Pacifico';
+    letter-spacing: 2px;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333; /* Color del encabezado */
+}
+
+.contacto p {
+    font-family: 'Pacifico';
+    letter-spacing: 2px;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.contacto-container {
+    display: flex; /* Usar flexbox para alinear elementos */
+    justify-content: space-between; /* Espaciado entre elementos */
+    align-items: center; /* Centrar verticalmente */
+}
+
+.contacto-info {
+    text-align: left; /* Alinear el texto a la izquierda */
+    flex: 1; /* Permitir que tome el espacio disponible */
+    margin-right: 20px; /* Espacio a la derecha */
+}
+
+.contacto-info strong {
+    font-size: 1.5em; /* Tamaño del nombre */
+    color: #b3412f; /* Color del nombre */
+}
+
+.contacto-info ul {
+    list-style: none; /* Quitar los puntos de la lista */
+    padding: 0;
+}
+
+.contacto-info ul li {
+    font-size: 1.1em; /* Tamaño de la lista */
+}
+
+.imagen-contacto {
+    flex: 1; /* Permitir que la imagen tome el espacio disponible */
+}
+
+.imagen-contacto img {
+    max-width: 100%;
+    border-radius: 10px; /* Bordes redondeados para la imagen */
+}
